@@ -1,17 +1,15 @@
 <template>
-  <div class="app">
-    <header>
-      <div class="header">
-        <logo-kcdim/>
-        <nav-bar/>
-        <dark-mode/>
-      </div>
-    </header>
-    <div class="wrapper">
-      <main>
-        <router-view></router-view>
-      </main>
+  <header>
+    <div class="header">
+      <logo-kcdim/>
+      <nav-bar/>
+      <dark-mode/>
     </div>
+  </header>
+  <div class="wrapper">
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
