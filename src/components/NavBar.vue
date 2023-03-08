@@ -11,15 +11,16 @@
 </template>
 
 <script>
+const baseURL = '/kcdim-vue/';
 export default {
   name: "NavBar",
   data() {
     return {
       routers: [
-        {id: 1, link: '/topics', name: 'Темы'},
-        {id: 2, link: '/students', name: 'Учащиеся'},
-        {id: 3, link: '/events', name: 'Олимпиады'},
-        {id: 4, link: '/links', name: 'Ссылки'},
+        {id: 1, link: `${baseURL}topics`, name: 'Темы'},
+        {id: 2, link: `${baseURL}students`, name: 'Учащиеся'},
+        {id: 3, link: `${baseURL}events`, name: 'Олимпиады'},
+        {id: 4, link: `${baseURL}links`, name: 'Ссылки'},
       ],
     }
   },
