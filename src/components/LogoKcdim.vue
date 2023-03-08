@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/kcdim-vue/" class="logo group">
+  <router-link to="/" class="logo group">
     <img src="/src/assets/logo.png" alt="Логотип">
     <div class="logo__header">
       <h1>Компьютерный центр г. Светлогорска</h1>
