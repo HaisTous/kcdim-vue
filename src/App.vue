@@ -24,12 +24,6 @@ export default {
     LogoKcdim,
     NavBar,
   },
-  computed: {
-    username() {
-      // We will see what `params` is shortly
-      return this.$route.params.username
-    },
-  },
 }
 </script>
 
