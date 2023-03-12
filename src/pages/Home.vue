@@ -17,10 +17,10 @@
         </div>
         <div class="event__diplomas">
           <a
-              :href="diploma"
+              :href="getImageUrl(diploma)"
               target="_blank"
               v-for="diploma in event.diplomas">
-            <img src="/src/assets/diplomas/dayneko-04112022.webp" alt="Диплом">
+            <img :src="getImageUrl(diploma)" alt="Диплом">
           </a>
         </div>
       </div>
@@ -53,17 +53,23 @@ export default {
                 'Трифонов Ярослав - Сертификат участника',
               ],
               diplomas: [
-                '/src/assets/smolechkov-24022023.webp',
-                '/src/assets/voronov-24022023.webp',
-                '/src/assets/trifonov-2402023.webp'
+                'smolechkov-24022023.webp',
+                'voronov-24022023.webp',
+                'trifonov-2402023.webp',
               ],
             },
           ],
         },
       ]
     }
+  },
+  methods: {
+    getImageUrl(name) {
+      return new URL(`/src/assets/diplomas/${name}`, import.meta.url).href
+    }
   }
 }
+
 </script>
 
 <style scoped>
