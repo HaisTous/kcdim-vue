@@ -34,7 +34,7 @@ export default {
   name: "Home",
   data() {
     return {
-      date: '12 марта 2023 года в 13:31',
+      date: '12 марта 2023 года в 17:12',
       topics: [
         {'id': 1, 'link': 'topics/data-output.html', 'name': 'Вывод данных'},
         {'id': 2, 'link': 'topics/data-input.html', 'name': 'Ввод данных'},
@@ -63,9 +63,9 @@ export default {
         {'id': 18, 'name': 'Лещик Тимур, 5 кл', 'scores': [16, 15, 30, 21, 0,], 'totalScore': 82},
         {'id': 19, 'name': 'Кострома Владимир, 6 кл', 'scores': [16, 15, 30, 15, 0,], 'totalScore': 76},
         {'id': 20, 'name': 'Шевеленко Арсений, 8 кл', 'scores': [16, 15, 30, 15, 0,], 'totalScore': 76},
-        {'id': 21, 'name': 'Крук Михаил, 9 кл', 'scores': [16, 10, 15, 27, 3,], 'totalScore': 71},
-        {'id': 22, 'name': 'Радченко Никита, 8 кл', 'scores': [16, 15, 30, 9, 0,], 'totalScore': 70},
-        {'id': 23, 'name': 'Воронов Прохор, 5 кл', 'scores': [16, 15, 30, 9, 0,], 'totalScore': 70},
+        {'id': 21, 'name': 'Воронов Прохор, 5 кл', 'scores': [16, 15, 30, 11, 0,], 'totalScore': 72},
+        {'id': 22, 'name': 'Крук Михаил, 9 кл', 'scores': [16, 10, 15, 27, 3,], 'totalScore': 71},
+        {'id': 23, 'name': 'Радченко Никита, 8 кл', 'scores': [16, 15, 30, 9, 0,], 'totalScore': 70},
         {'id': 24, 'name': 'Крышнев Иван, 6 кл', 'scores': [16, 15, 30, 7, 0,], 'totalScore': 68},
         {'id': 25, 'name': 'Брундуков Дмитрий, 6 кл', 'scores': [16, 15, 30, 4, 0,], 'totalScore': 65},
         {'id': 26, 'name': 'Жигунов Константин, 6 кл', 'scores': [16, 15, 30, 0, 0,], 'totalScore': 61},
