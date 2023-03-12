@@ -23,7 +23,6 @@ export default {
     DarkMode,
     LogoKcdim,
     NavBar,
-
   },
 }
 </script>
