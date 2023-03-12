@@ -1,30 +1,32 @@
 <template>
-  <h2 class="title">Список учащихся</h2>
-  <p class="updated_date">Последнее обновление: {{ date }}</p>
-  <div class="stripped-table">
-    <table>
-      <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col" class="text-left">Учащийся</th>
-        <th scope="col" v-for="topic in topics" :key="topic.id">
-          <a :href="topic.link" class="tooltip group">{{ topic.id }}
-            <span class="tooltip-text">{{ topic.name }}</span>
-          </a>
-        </th>
-        <th scope="col">Всего</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="(student, num) in students" :key="student.id">
-        <td>{{ num + 1 }}</td>
-        <th scope="row" class="name">{{ student.name }}</th>
-        <td v-for="score in student.scores">{{ score }}</td>
-        <td>{{ student.totalScore }}</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+  <main>
+    <h2 class="title">Список учащихся</h2>
+    <p class="updated_date">Последнее обновление: {{ date }}</p>
+    <div class="stripped-table">
+      <table>
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" class="text-left">Учащийся</th>
+          <th scope="col" v-for="topic in topics" :key="topic.id">
+            <a :href="topic.link" class="tooltip group">{{ topic.id }}
+              <span class="tooltip-text">{{ topic.name }}</span>
+            </a>
+          </th>
+          <th scope="col">Всего</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(student, num) in students" :key="student.id">
+          <td>{{ num + 1 }}</td>
+          <th scope="row" class="name">{{ student.name }}</th>
+          <td v-for="score in student.scores">{{ score }}</td>
+          <td>{{ student.totalScore }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
 </template>
 
 <script>

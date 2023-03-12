@@ -7,9 +7,7 @@
     </div>
   </header>
   <div class="wrapper">
-    <main>
-      <router-view></router-view>
-    </main>
+    <router-view></router-view>
   </div>
 </template>
 

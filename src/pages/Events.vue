@@ -1,37 +1,39 @@
 <template>
-  <h2 class="title">Ближайшие олимпиады</h2>
-  <div class="stripped-table">
-    <table>
-      <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Начало</th>
-        <th scope="col">Длительность</th>
-        <th scope="col">Олимпиада</th>
-        <th scope="col">Возрастная категория</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="(event, index) in events" :key="event.id">
-        <td>{{ index + 1 }}</td>
-        <td>
-          <p>{{ event.startDate }}</p>
-          <p>{{ event.startTime }}</p>
-        </td>
-        <td>{{ event.duration }}</td>
-        <th scope="row">
-          <a v-if="event.link.length > 0" :href="event.link" class="hover:underline" target="_blank">
-            {{ event.name }}
-          </a>
-          <span v-else>{{ event.name }}</span>
-        </th>
-        <td>
-          <p v-for="category in event.ageCategories">{{ category }}</p>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+  <main>
+    <h2 class="title">Ближайшие олимпиады</h2>
+    <div class="stripped-table">
+      <table>
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Начало</th>
+          <th scope="col">Длительность</th>
+          <th scope="col">Олимпиада</th>
+          <th scope="col">Возрастная категория</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(event, index) in events" :key="event.id">
+          <td>{{ index + 1 }}</td>
+          <td>
+            <p>{{ event.startDate }}</p>
+            <p>{{ event.startTime }}</p>
+          </td>
+          <td>{{ event.duration }}</td>
+          <th scope="row">
+            <a v-if="event.link.length > 0" :href="event.link" class="hover:underline" target="_blank">
+              {{ event.name }}
+            </a>
+            <span v-else>{{ event.name }}</span>
+          </th>
+          <td>
+            <p v-for="category in event.ageCategories">{{ category }}</p>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
 </template>
 
 <script>

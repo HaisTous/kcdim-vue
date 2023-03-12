@@ -1,12 +1,14 @@
 <template>
-  <h2 class="title">Ссылки</h2>
-  <ol>
-    <li v-for="link in links" :key="link.id">
-      <a :href="link.link" target="_blank">
-        {{ link.name }}
-      </a>
-    </li>
-  </ol>
+  <main>
+    <h2 class="title">Ссылки</h2>
+    <ol>
+      <li v-for="link in links" :key="link.id">
+        <a :href="link.link" target="_blank">
+          {{ link.name }}
+        </a>
+      </li>
+    </ol>
+  </main>
 </template>
 
 <script>
@@ -21,7 +23,7 @@ export default {
           name: 'Онлайн компилятор Python'
         },
         {
-          id:2,
+          id: 2,
           link: 'https://www.python.org/ftp/python/3.11.2/python-3.11.2-amd64.exe',
           name: 'Скачать Python 3.11.2'
         },

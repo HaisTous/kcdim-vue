@@ -14,7 +14,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory('/kcdim-vue/'),
+    history: createWebHistory('/kcdim-vue/'),
     routes
 })
 
