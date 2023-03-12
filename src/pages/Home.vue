@@ -53,9 +53,9 @@ export default {
                 'Трифонов Ярослав - Сертификат участника',
               ],
               diplomas: [
-                '/src/assets/diplomas/smolechkov-24022023.webp',
-                '/src/assets/diplomas/voronov-24022023.webp',
-                '/src/assets/diplomas/trifonov-2402023.webp'
+                '/src/assets/smolechkov-24022023.webp',
+                '/src/assets/voronov-24022023.webp',
+                '/src/assets/trifonov-2402023.webp'
               ],
             },
           ],
