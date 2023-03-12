@@ -20,7 +20,7 @@
               :href="diploma"
               target="_blank"
               v-for="diploma in event.diplomas">
-            <img :src="diploma" alt="Диплом">
+            <img src="/src/assets/diplomas/dayneko-04112022.webp" alt="Диплом">
           </a>
         </div>
       </div>
