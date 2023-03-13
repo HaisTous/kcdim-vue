@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Students",
   data() {
     return {
       date: '12 марта 2023 года в 17:12',

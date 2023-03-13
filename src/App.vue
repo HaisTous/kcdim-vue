@@ -26,19 +26,9 @@ export default {
 </script>
 
 <style>
-html {
-  @apply scroll-smooth scroll-pt-[4.5rem];
-}
 
-body {
-  @apply antialiased bg-gray-200
-  dark:bg-slate-800;
-}
 
-header {
-  @apply sticky top-0 py-2 mb-2 border-b-2 z-50 border-gray-200 text-gray-700 bg-gray-100
-  dark:text-gray-300 dark:bg-slate-900 dark:border-slate-700;
-}
+
 
 .header {
   @apply flex flex-row justify-between items-center flex-wrap mx-auto max-w-screen-xl px-2;
@@ -48,10 +38,7 @@ header {
   @apply flex flex-row items-start mx-auto max-w-screen-xl gap-2 px-2;
 }
 
-main {
-  @apply w-full overflow-x-auto rounded-lg px-6 py-3 bg-gray-100 text-gray-700
-  dark:bg-slate-900 dark:text-gray-300;
-}
+
 
 h2.title {
   @apply uppercase text-lg font-bold text-gray-900 mb-4
@@ -89,5 +76,46 @@ h2.title {
 .stripped-table tbody tr:nth-child(odd) {
   @apply bg-white bg-gray-100
   dark:bg-slate-700 dark:border-slate-600;
+}
+
+.line-number {
+  @apply inline-block w-12 text-gray-500;
+}
+
+.number {
+  @apply text-orange-600
+  dark:text-orange-400;
+}
+
+.string {
+  @apply text-green-600
+  dark:text-green-400;
+}
+
+.function {
+  @apply text-blue-600
+  dark:text-blue-400;
+}
+
+.method {
+  @apply text-cyan-600
+  dark:text-cyan-400;
+}
+
+.statement {
+  @apply text-fuchsia-600
+  dark:text-fuchsia-400;
+}
+
+.comment {
+  @apply text-gray-500;
+}
+
+.tab1 {
+  @apply ml-8;
+}
+
+.tab2 {
+  @apply ml-16;
 }
 </style>

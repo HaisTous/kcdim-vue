@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Links",
   data() {
     return {
       links: [
@@ -49,12 +49,5 @@ export default {
 </script>
 
 <style scoped>
-ol {
-  @apply list-decimal list-inside space-y-1 text-gray-700
-  dark:text-gray-300;
-}
 
-ol a:hover {
-  @apply hover:underline;
-}
 </style>
