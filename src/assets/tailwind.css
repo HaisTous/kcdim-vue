@@ -27,7 +27,7 @@
     }
 
     pre {
-        @apply text-gray-900 rounded-lg bg-gray-200 my-4 px-2 overflow-x-auto
+        @apply text-gray-900 rounded-lg bg-gray-200 my-4 px-2 overflow-x-auto select-none
         dark:text-gray-100 dark:bg-slate-800 pb-4;
     }
 

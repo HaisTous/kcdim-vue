@@ -1,5 +1,5 @@
 import Home from "@/pages/Home.vue";
-import {createRouter, createWebHistory} from "vue-router";
+import {createRouter, createWebHashHistory, createWebHistory} from "vue-router";
 import Topics from "@/pages/TopicsList.vue";
 import Students from "@/pages/Students.vue";
 import Events from "@/pages/Events.vue";
@@ -25,7 +25,7 @@ console.log(routes)
 
 
 const router = createRouter({
-    history: createWebHistory('/kcdim-vue/'),
+    history: createWebHashHistory('/kcdim-vue/'),
     routes
 })
 
